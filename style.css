@@ -1,3 +1,21 @@
+/* RESPONSIVIDADE
+
+All: Para todos os dispositivos
+Braille: para dispositivos táteis
+Embossed: para dispositivos que imprimem em braile
+Handheld: para dispositivos portáteis, geralmente com telas pequenas e banda limitada
+Print: para impressão em papel
+Projection: para apresentações como PPS
+Screen: para monitores de computador, tablets, smartphones, etc.
+Speech: para leitores de tela, como os usados por pessoas com deficiência visual
+
+ORIENTAÇÃO
+portrait: para telas em modo retrato (vertical)
+landscape: para telas em modo paisagem (horizontal)
+
+
+*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -95,10 +113,13 @@ header{
 	margin: 24px 0 0 57px;
 }
 
-@media screen and (max-width: 900px) {
+
+/* ****** DISPOSITIVOS MÓVEIS ****** */
+@media screen and (max-width: 980px)
+{
 	.container-left{
 		width: 100%;
-		height: 50%;
+		height: 15%;
 		padding: 0;
 		margin: 0;
 	}
@@ -113,7 +134,7 @@ header{
 
 	.img-girl {
 		position: static; 
-		margin-left: 70px;
+		margin-left: 320px;
 		max-width: 90%;
 		height: 300px;
 
@@ -134,7 +155,7 @@ header{
 		margin: 15px 40px;
 		width: auto;
 		text-align: center;
-		font-size: 14px;
+		font-size: 18px;
 		line-height: 24px;
 	}
 
